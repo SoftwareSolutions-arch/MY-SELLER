@@ -1,0 +1,176 @@
+<app-header search="YES" (handleSearch)="searchData($event)"></app-header>
+<ion-content>
+    <ion-row class="header ion-align-items-center">
+        <!-- <ion-col style="border-right: 1px solid gray;">
+            <h6 class="p-0 m-0 title">Today's Awesome Deals</h6>
+        </ion-col> -->
+        <ion-col class="text-left sub-header">
+            Y/S : Your Shopping
+        </ion-col>
+        <ion-col class="text-right sub-header">
+            C/R : Current rate
+        </ion-col>
+
+    </ion-row>
+    <ion-row class="ion-text-right">
+        <ion-col>
+            <h6 class="p-0 m-0 title">Update: <span class="time">8 aug | 8:00 AM</span></h6>
+        </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+        <ion-slides pager="false" [options]="slideOpts">
+            <ion-slide>
+                <ion-card>
+                    <div class="product-card">
+                        <div class="badge">Hot</div>
+                        <div class="product-tumb">
+                            <img src="../../../assets/image/prod/chaval.jpeg" alt="icon">
+                            <h5 class="text-center">Chaval</h5>
+                        </div>
+                        <div class="product-details">
+                            <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                            <p class="text-info">Y/S : &#8377;1200</p>
+                        </div>
+                    </div>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                    <div class="product-card">
+                        <div class="badge">Hot</div>
+                        <div class="product-tumb">
+                            <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+                            <h5 class="text-center">Genhu</h5>
+                        </div>
+                        <div class="product-details">
+                            <p class="text-danger font-weight-bold">C/R : &#8377;1150</p>
+                            <p class="text-info">Y/S : &#8377;1200</p>
+                        </div>
+                    </div>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                    <div class="product-card">
+                        <div class="badge">Hot</div>
+                        <div class="product-tumb">
+                            <img src="../../../assets/image/prod/oil.jpg" alt="icon">
+                            <h5 class="text-center">Oil</h5>
+                        </div>
+                        <div class="product-details">
+                            <p class="text-warning font-weight-bold">C/R : &#8377;1200</p>
+                            <p class="text-info">Y/S : &#8377;1200</p>
+                        </div>
+                    </div>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                    <div class="product-card">
+                        <div class="badge">Hot</div>
+                        <div class="product-tumb">
+                            <img src="../../../assets/image/prod/chana.jpg" alt="icon">
+                            <h5 class="text-center">Chana</h5>
+                        </div>
+                        <div class="product-details">
+                            <p class="text-warning font-weight-bold">C/R : &#8377;1200</p>
+                            <p class="text-info">Y/S : &#8377;1200</p>
+                        </div>
+                    </div>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                    <div class="product-card">
+                        <div class="badge">Hot</div>
+                        <div class="product-tumb">
+                            <img src="../../../assets/image/prod/chana.jpg" alt="icon">
+                            <h5 class="text-center">Chana</h5>
+                        </div>
+                        <div class="product-details">
+                            <p class="text-warning font-weight-bold">C/R : &#8377;1200</p>
+                            <p class="text-info">Y/S : &#8377;1200</p>
+                        </div>
+                    </div>
+                </ion-card>
+            </ion-slide>
+        </ion-slides>
+    </ion-row>
+
+    <ion-row class="running-item">
+        <ion-card>
+            <div class="single-item">
+                <ion-thumbnail slot="start" class="prod-img">
+                    <img src="../../../assets/image/prod/chaval.jpeg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2 class="font-weight-bold">Chaval</h2>
+                    <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                    <p class="text-info">Y/S : &#8377;1200</p>
+                </ion-label>
+            </div>
+        </ion-card>
+        <ion-card>
+            <div class="single-item">
+                <ion-thumbnail slot="start" class="prod-img">
+                    <img src="../../../assets/image/prod/gehu.jpeg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2 class="font-weight-bold">Genhu</h2>
+                    <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                    <p class="text-info">Y/S : &#8377;1200</p>
+                </ion-label>
+            </div>
+        </ion-card>
+        <ion-card>
+            <div class="single-item">
+                <ion-thumbnail slot="start" class="prod-img">
+                    <img src="../../../assets/image/prod/oil.jpg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2 class="font-weight-bold">oil</h2>
+                    <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                    <p class="text-info">Y/S : &#8377;1200</p>
+                </ion-label>
+            </div>
+        </ion-card>
+        <ion-card>
+            <div class="single-item">
+                <ion-thumbnail slot="start" class="prod-img">
+                    <img src="../../../assets/image/prod/oil.jpg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2 class="font-weight-bold">oil</h2>
+                    <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                    <p class="text-info">Y/S : &#8377;1200</p>
+                </ion-label>
+            </div>
+        </ion-card>
+        <ion-card>
+            <div class="single-item">
+                <ion-thumbnail slot="start" class="prod-img">
+                    <img src="../../../assets/image/prod/oil.jpg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2 class="font-weight-bold">oil</h2>
+                    <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                    <p class="text-info">Y/S : &#8377;1200</p>
+                </ion-label>
+            </div>
+        </ion-card>
+        <ion-card>
+            <div class="single-item">
+                <ion-thumbnail slot="start" class="prod-img">
+                    <img src="../../../assets/image/prod/oil.jpg">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2 class="font-weight-bold">oil</h2>
+                    <p class="text-success font-weight-bold">C/R : &#8377;1500</p>
+                    <p class="text-info">Y/S : &#8377;1200</p>
+                </ion-label>
+            </div>
+        </ion-card>
+
+
+    </ion-row>
+</ion-content>

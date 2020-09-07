@@ -1,0 +1,145 @@
+<app-header search="NO" (handleSearch)="searchData($event)"></app-header>
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-no-padding">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <div class="banner">
+          <div class="greetings">
+            <h3>Welcome..!</h3>
+            <p>Alpesh Kirana Store</p>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../../../assets/image/offer/offer1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../../../assets/image/offer/offer2.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+  <div class="cards">
+    <!-- <ion-card>
+      <ion-card-header class="text-center bg-warnign">
+        <ion-icon color="secondary" name="logo-usd"></ion-icon>
+        <ion-card-title class="text-secondary">Today's Deal</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header class="text-center bg-info">
+        <ion-icon color="secondary" name="newspaper-outline"></ion-icon>
+        <ion-card-title class="text-secondary">My Orde</ion-card-title>
+      </ion-card-header>
+    </ion-card> -->
+    <ion-row class="ion-margin">
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Genhu</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/chaval.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Chaval</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/chana.jpg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Chana</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/oil.jpg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Oil</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Genhu</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/chaval.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Chaval</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/chana.jpg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Chana</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card [routerLink]="['/category']">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/oil.jpg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h5 class="text-center">Oil</h5>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

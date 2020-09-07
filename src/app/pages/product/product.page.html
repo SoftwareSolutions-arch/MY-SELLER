@@ -1,0 +1,76 @@
+<app-header search="YES" (handleSearch)="searchData($event)"></app-header>
+<ion-content [fullscreen]="true">
+  <div class="cards">
+    <!-- <ion-card>
+      <ion-card-header class="text-left bg-warnign">
+        <ion-icon color="secondary" name="logo-usd"></ion-icon>
+        <ion-card-title class="text-secondary">Today's Deal</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header class="text-left bg-info">
+        <ion-icon color="secondary" name="newspaper-outline"></ion-icon>
+        <ion-card-title class="text-secondary">My Orde</ion-card-title>
+      </ion-card-header>
+    </ion-card> -->
+    <ion-row class="ion-margin">
+      <ion-col size="6">
+        <ion-card (click)="viewDetail()">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h6 class="text-left">Genhu - Premium</h6>
+              <p class="text-right mr-4px">&#8377;1400</p>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card (click)="viewDetail()">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h6 class="text-left">Genhu - silver</h6>
+              <p class="text-right mr-4px">&#8377;1200</p>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin">
+      <ion-col size="6">
+        <ion-card (click)="viewDetail()">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h6 class="text-left">Genhu - Gold</h6>
+              <p class="text-right mr-4px">&#8377;1400</p>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card (click)="viewDetail()">
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="../../../assets/image/prod/gehu.jpeg" alt="icon">
+            </div>
+            <div class="product-details">
+              <h6 class="text-left">Genhu</h6>
+              <p class="text-right mr-4px">&#8377;1550</p>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

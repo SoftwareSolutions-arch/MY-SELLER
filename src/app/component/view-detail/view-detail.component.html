@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-row class="header ion-align-items-center">
+    <ion-col size="2" (click)="dismissModal()">
+      <ion-img src="../../../assets/back.png" class="back-icon"></ion-img>
+    </ion-col>
+    <ion-col>
+      <h2 class="p-0 m-0 title">Detail</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row class="container">
+    <div class="line">
+      <ion-row class="product">
+        <ion-col>
+          <img class="product-pic" alt="product" src="../../../assets/image/prod/gehu.jpeg">
+        </ion-col>
+        <ion-col size="8">
+          <h2>Genhu - Gold</h2>
+          <h6>Premium Quality</h6>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-row class="data">
+      <ion-col size="12">
+        <label>Curren Rate</label>
+      </ion-col>
+      <ion-col size="12">
+        <span class="value">&#8377; 1200 / 20 Kg</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="data">
+      <ion-col size="12">
+        <label>Category</label>
+      </ion-col>
+      <ion-col size="12">
+        <span class="value">Super Premium</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="data">
+      <ion-col size="12">
+        <label>Other Dtail</label>
+      </ion-col>
+      <ion-col size="12">
+        <span class="value">
+          <p class="m-0">
+            other Detail will be here
+          </p>
+        </span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="quantity">
+        <div class="number">
+          <span class="minus" (click)="plusQuantity()">-</span>
+          <span class="input-quantity">{{quantity}}</span>
+          <span class="plus" (click)="minusQuantity()">+</span>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button color="secondary">
+          <ion-icon name="cart"></ion-icon> Add to Cart
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-row>
+</ion-content>

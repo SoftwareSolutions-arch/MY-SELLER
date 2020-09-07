@@ -1,0 +1,82 @@
+<app-header search="YES" (handleSearch)="searchData($event)"></app-header>
+<ion-content>
+  <ion-row class="header ion-align-items-center">
+    <ion-col>
+      <h5 class="p-0 m-0 title">Deliver to Alpesh kirana store.</h5>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="text-left sub-header">
+      3 Items | Total : 46
+    </ion-col>
+    <ion-col class="text-right sub-header">
+      Total : <span class="font-weight-bold"></span>&#8377; 33800
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-item class="single-item">
+      <ion-label>
+        <p><span class="text-danger">&bull; Cancelled</span></p>
+        <p>Order ID : 00124</p>
+        <p>01 Jan 2020</p>
+        <p class="total-price-item">Total : &#8377;8000</p>
+      </ion-label>
+      <div class="buttons">
+        <ion-button (click)="viewOrderDetail()" color="secondary">
+          View Order
+        </ion-button>
+      </div>
+    </ion-item>
+  </ion-row>
+
+  <ion-row>
+    <ion-item class="single-item">
+      <ion-label>
+        <p><span class="text-warning">&bull; Pending</span></p>
+        <p>Order ID : 001324</p>
+        <p>01 Jan 2020 </p>
+        <p class="total-price-item">Total : &#8377;8000</p>
+      </ion-label>
+      <div class="buttons">
+        <ion-button color="secondary" fill="outline">
+          Cancel
+        </ion-button>
+        <ion-button (click)="viewOrderDetail()" color="secondary">
+          View Order
+        </ion-button>
+      </div>
+    </ion-item>
+  </ion-row>
+
+  <ion-row>
+    <ion-item class="single-item">
+      <ion-label>
+        <p><span class="text-success">&bull; Deliverd</span></p>
+        <p>Order ID : 010124</p>
+        <p>01 Jan 2020 </p>
+        <p class="total-price-item">Total : &#8377;8000</p>
+      </ion-label>
+      <div class="buttons">
+        <ion-button (click)="viewOrderDetail()" color="secondary">
+          View Order
+        </ion-button>
+      </div>
+    </ion-item>
+  </ion-row>
+
+  <ion-row>
+    <ion-item class="single-item">
+      <ion-label>
+        <p><span class="text-info">&bull; Shipped</span></p>
+        <p>Order ID : 010124</p>
+        <p>01 Jan 2020 </p>
+        <p class="total-price-item">Total : &#8377;8000</p>
+      </ion-label>
+      <div class="buttons">
+        <ion-button (click)="viewOrderDetail()" color="secondary">
+          View Order
+        </ion-button>
+      </div>
+    </ion-item>
+  </ion-row>
+</ion-content>

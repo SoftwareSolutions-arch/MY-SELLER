@@ -1,0 +1,91 @@
+<app-header search="YES" (handleSearch)="searchData($event)"></app-header>
+<ion-content>
+    <ion-row class="header ion-align-items-center">
+        <ion-col>
+            <h5 class="p-0 m-0 title">My Previous Orders</h5>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="text-left sub-header">
+            3 Items | Total : 46
+        </ion-col>
+        <ion-col class="text-right sub-header">
+            Total : <span class="font-weight-bold"></span>&#8377; 1,33,800
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-item class="single-item">
+            <ion-thumbnail slot="start" class="cart-img">
+                <img src="../../../assets/image/prod/gehu.jpeg">
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Genhu</h2>
+                <p>Total Kg : 400Kg</p>
+                <p>Qunatity : 20 || <span>20Kg / 1Qt</span></p>
+                <p class="total-price-item">Total : 20 * &#8377;400 = &#8377;8000</p>
+            </ion-label>
+            <div class="quantity">
+                <div class="number">
+                    <span class="minus" (click)="plusQuantity()">-</span>
+                    <span class="input-quantity">20</span>
+                    <span class="plus" (click)="minusQuantity()">+</span>
+                </div>
+            </div>
+        </ion-item>
+    </ion-row>
+
+    <ion-row>
+        <ion-item class="single-item">
+            <ion-thumbnail slot="start" class="cart-img">
+                <img src="../../../assets/image/prod/chana.jpg">
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Genhu</h2>
+                <p>Total Kg : 400Kg</p>
+                <p>Qunatity : 12 || <span>20Kg / 1Qt</span></p>
+                <p class="total-price-item">Total : 12 * &#8377;400 = &#8377;4800</p>
+            </ion-label>
+            <div class="quantity">
+                <div class="number">
+                    <span class="minus" (click)="plusQuantity()">-</span>
+                    <span class="input-quantity">12</span>
+                    <span class="plus" (click)="minusQuantity()">+</span>
+                </div>
+            </div>
+        </ion-item>
+    </ion-row>
+
+    <ion-row>
+        <ion-item class="single-item">
+            <ion-thumbnail slot="start" class="cart-img">
+                <img src="../../../assets/image/prod/oil.jpg">
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Genhu</h2>
+                <p>Qunatity : 15 || <span>20Kg / 1Qt</span></p>
+                <p class="total-price-item">Total : 14 * &#8377;1500 = &#8377;21000</p>
+            </ion-label>
+            <div class="quantity">
+                <div class="number">
+                    <span class="minus" (click)="plusQuantity()">-</span>
+                    <span class="input-quantity">15</span>
+                    <span class="plus" (click)="minusQuantity()">+</span>
+                </div>
+            </div>
+        </ion-item>
+    </ion-row>
+</ion-content>
+<ion-footer class="io-padding">
+    <ion-row class="text-center">
+        <ion-col>
+            <ion-button fill="outline" color="secondary">
+                <ion-icon name="add-circle-outline"></ion-icon> Add more Order
+            </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button color="secondary">
+                <ion-icon name="cart"></ion-icon> Order Now
+            </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-footer>
